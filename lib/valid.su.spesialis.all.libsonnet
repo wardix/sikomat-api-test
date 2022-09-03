@@ -5,13 +5,9 @@
       "listen": "test",
       "script": {
         "exec": [
-          "pm.test('Status code is 200', function () {",
-          "  pm.response.to.have.status(200);",
+          "pm.test('debug', function () {",
+          "  console.log(pm.response.text());",
           "});",
-          "pm.test('data is exists', function () {",
-          "  var jsonData = pm.response.json();",
-          "  pm.expect(jsonData.page).to.have.property('data');",
-          "});"
         ],
         "type": "text/javascript"
       }

@@ -5,13 +5,9 @@
       "listen": "test",
       "script": {
         "exec": [
-          "pm.test('Status code is 403', function () {",
-          "  pm.response.to.have.status(403);",
+          "pm.test('debug', function () {",
+          "  console.log(pm.response.text());",
           "});",
-          "pm.test('Request is forbidden', function () {",
-          "  var response = pm.response.text();",
-          "  pm.expect(response).to.eql('Forbidden');",
-          "});"
         ],
         "type": "text/javascript"
       }
