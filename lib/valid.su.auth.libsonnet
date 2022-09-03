@@ -5,13 +5,8 @@
       "listen": "test",
       "script": {
         "exec": [
-          "pm.test('Status code is 200', function () {",
-          "  pm.response.to.have.status(200);",
-          "});",
-          "pm.test('token is not empty', function () {",
-          "  var jsonData = pm.response.json();",
-          "  pm.expect(jsonData.token.length > 0).to.eql(true);",
-          "  pm.environment.set('token', jsonData.token);",
+          "pm.test('debug', function () {",
+          "  console.log(pm.response.text());",
           "});"
         ],
         "type": "text/javascript"
