@@ -16,12 +16,6 @@ local invalidSuSpesialisAll = import 'lib/invalid.su.spesialis.all.libsonnet';
     validSuAuth,
     invalidSuAuth,
     validSuStats,
-    invalidSuStats,
-    validSuBidanAll,
-    invalidSuBidanAll,
-    validSuBidanSearch,
-    invalidSuBidanSearch,
-    validSuSpesialisAll,
-    invalidSuSpesialisAll
+    invalidSuStats
   ]
 }
